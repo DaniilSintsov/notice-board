@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/notice-board/static/css/main.c2d7bb8e.css",
+    "main.js": "/notice-board/static/js/main.313335c2.js",
+    "index.html": "/notice-board/index.html",
+    "main.c2d7bb8e.css.map": "/notice-board/static/css/main.c2d7bb8e.css.map",
+    "main.313335c2.js.map": "/notice-board/static/js/main.313335c2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2d7bb8e.css",
+    "static/js/main.313335c2.js"
+  ]
+}
