@@ -5,7 +5,7 @@ export default class SearchPanel extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      term: '',
+      term: ''
     }
     this.onUpdateSearch = this.onUpdateSearch.bind(this)
   }
@@ -13,7 +13,7 @@ export default class SearchPanel extends React.Component {
   onUpdateSearch(e) {
     const term = e.target.value
     this.setState({
-      term,
+      term
     })
     this.props.onUpdateSearch(term)
   }
@@ -21,9 +21,9 @@ export default class SearchPanel extends React.Component {
   render() {
     return (
       <input
-        type='text'
-        className='form-control search-input'
-        placeholder='Поиск по записям'
+        type="text"
+        className="form-control search-input"
+        placeholder="Поиск по записям"
         onChange={this.onUpdateSearch}
       />
     )

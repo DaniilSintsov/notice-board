@@ -3,8 +3,14 @@ import './post-list-item.css'
 
 export default class PostListItem extends React.Component {
   render() {
-    const {label, onDelete, onToggleImportant, onToggleLiked, important, like} =
-      this.props
+    const {
+      label,
+      onDelete,
+      onToggleImportant,
+      onToggleLiked,
+      important,
+      like
+    } = this.props
     let classNames = 'app-list-item d-flex justify-content-between'
 
     if (important) {
@@ -18,27 +24,24 @@ export default class PostListItem extends React.Component {
     return (
       <div className={classNames}>
         <span
-          className='app-list-item-label'
-          onClick={onToggleLiked}
-        >
+          className="app-list-item-label"
+          onClick={onToggleLiked}>
           {label}
         </span>
-        <div className='d-flex justify-content-center align-items-center'>
+        <div className="d-flex justify-content-center align-items-center">
           <button
-            type='button'
-            className='btn-star btn-sm'
-            onClick={onToggleImportant}
-          >
-            <i className='fa-solid fa-star'></i>
+            type="button"
+            className="btn-star btn-sm"
+            onClick={onToggleImportant}>
+            <i className="fa-solid fa-star"></i>
           </button>
           <button
-            type='button'
-            className='btn-trash btn-sm'
-            onClick={onDelete}
-          >
-            <i className='fa-solid fa-trash-can'></i>
+            type="button"
+            className="btn-trash btn-sm"
+            onClick={onDelete}>
+            <i className="fa-solid fa-trash-can"></i>
           </button>
-          <i className='fa-solid fa-heart'></i>
+          <i className="fa-solid fa-heart"></i>
         </div>
       </div>
     )
